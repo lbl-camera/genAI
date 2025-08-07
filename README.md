@@ -3,13 +3,13 @@
 
 This repository provides a comprehensive exploration of synthetic image generation using multiple generative model architectures: **DCGAN**, **StyleGAN2-ADA**, **DALL-E 2 & 3**, and **Diffusion-based models** (e.g., Stable Diffusion, ControlNet, InstructPix2Pix, etc.).
 
-🧪 This work is supported by the paper:  
+This work is supported by the paper:  
 **"Synthetic Scientific Image Generation with VAE, GAN, and Diffusion Model Architectures"**  
 📄 [Read the full article](https://www.mdpi.com/2313-433X/11/8/252)
 
 ---
 
-## 📁 Contents
+## Contents
 
 | Notebook | Description |
 |----------|-------------|
@@ -48,7 +48,7 @@ Each dataset contains:
 ## DCGAN Notebook
 
 - `dcgan_training.ipynb` provides a complete implementation of a DCGAN training loop.
-- 🛑 **Note**: You must use your own training data. We do **not** provide the training set used in our original experiments.
+- **Note**: You must use your own training data. We do **not** provide the training set used in our original experiments.
 
 ---
 

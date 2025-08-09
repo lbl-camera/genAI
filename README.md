@@ -13,10 +13,14 @@ This work is supported by the paper:
 
 | Notebook | Description |
 |----------|-------------|
-| `dcgan_training.ipynb` | DCGAN training notebook. Users can train a DCGAN model on their **own dataset** (we do not distribute the dataset used in the original experiments). |
+| `dcgan_training.ipynb` | DCGAN training notebook. Users can train a DCGAN model on their **own dataset** (we do not distribute the dataset used in the original experiments, only 3 samples for each type of data which are presented below). |
 | `stylegan2_training_cli.md` | Command-line instructions to train StyleGAN2-ADA using the official NVIDIA repo. |
 | `dalle_generation.ipynb` | Inference using DALL-E 2 and 3 APIs, including inpainting (edit), variation, and text-to-image generation. |
 | `diffusion_models_inference.ipynb` | Inference using various diffusion-based models (ControlNet, Stable UnCLIP, InstructPix2Pix, LEDITS++, DiffEdit). Includes multiple examples. |
+
+These notebooks can be used and run using 1 GPU on google colab. We also provide a link to the data: 
+
+
 
 ---
 
@@ -26,7 +30,7 @@ This work is supported by the paper:
 |------------|-------------|
 | GANs | DCGAN, StyleGAN2-ADA |
 | Transformer-based | DALL-E 2, DALL-E 3 |
-| Diffusion-based | Stable Diffusion, ControlNet, InstructPix2Pix, LEdit++, DiffEdit |
+| Diffusion-based | Stable Diffusion (Stable unCLIP), ControlNet, InstructPix2Pix, LEdit++, DiffEdit |
 
 ---
 
@@ -34,16 +38,16 @@ This work is supported by the paper:
 
 For **DALL-E** and **diffusion-based** model notebooks, we include sample images from 3 scientific datasets:
 
-- **CMC** – MicroCT images of fiber beads  
-- **ROCKS** – MicroCT images of rock sediments  
-- **ROOTS** – High-resolution RGB images of plant roots
+- **`CMC/`** – Ceramic Matrix Composites (CMCs) high-resolution imaging, achieved using synchrotron X-ray radiation composed of a class of materials engineered to enhance toughness and high-temperature performance compared to monolithic ceramics.
+- **`ROCKS/`** – MicroCT scans from samples containing large sediment grains from the Hanford DOE contaminated nuclear site.
+- **`ROOTS/`** – Plant root images: slices scanned by an automated robotic system called EcoBOT that enables high-throughput scanning of plants in hydroponic systems known as EcoFABs.
 
 Each dataset contains:
-- 1 input image
-- 3 generated images per input
-- 1 set of outputs per model (i.e., each model generates 3 outputs per image)
+- 3 input images
+- 3 generated images (one image generated per input)
 
 ---
+
 
 ## DCGAN Notebook
 
@@ -97,6 +101,11 @@ Requires API access to OpenAI's services.
   - **InstructPix2Pix**
 
 - Each model generates 3 outputs for each input image from the 3 sample datasets (CMC, ROCKS, ROOTS).
+
+
+## Metrics Calculation Notebook
+
+- `calculate_metrics.ipynb` calculates all metrics for all models including (SSIM, LPIPS, FID and CLIP Score for text-guided models). 
 
 ---
 

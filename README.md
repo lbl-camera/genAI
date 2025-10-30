@@ -1,5 +1,5 @@
 
-# Synthetic Scientific Image Generation
+# ApexGenAI - Synthetic Scientific Image Generation
 
 This repository provides a comprehensive exploration of synthetic image generation using multiple generative model architectures: **DCGAN**, **StyleGAN2-ADA**, **DALL-E 2 & 3**, and **Diffusion-based models** (e.g., Stable Diffusion, ControlNet, InstructPix2Pix, etc.).
 

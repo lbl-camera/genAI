@@ -58,7 +58,7 @@ Each dataset contains:
 
 ## StyleGAN2-ADA Training (Command Line)
 
-Training StyleGAN2-ADA is done via the [NVlabs/stylegan2-ada-pytorch](https://github.com/NVlabs/stylegan2-ada-pytorch) repository.
+Training StyleGAN2-ADA is done via the [NVlabs/stylegan2-ada-pytorch](https://github.com/NVlabs/stylegan2-ada-pytorch) repository. Users will be subject to the terms and conditions of the NVLabs StyleGAN2-ADA software. 
 
 ### Step-by-step:
 
